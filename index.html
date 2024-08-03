@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Scissor Paper Rock Game !</title>
+  <style>
+    /* internal css */
+    body {
+      background-color: rgb(166, 161, 156);
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    #div1 {
+      color: brown;
+      text-align: center;
+      font-size: 35pt;
+      padding: 20px;
+    }
+
+    
+
+    #div2 {
+      text-align: center;
+      padding: 5px;
+      font-size: 25pt;
+    }
+
+    button {
+      margin: 20px;
+      font-weight: bold;
+      font-size: 20pt;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div id="div1">
+    __SCISSOR-PAPER-ROCK GAME__
+  </div>
+
+  
+
+  <div id="div2">
+    <p>Hit the start button & select your choice:</p>
+    <p id="message"> </p>
+   <button onclick="getready()" style="color: red;" id="start">START</button>
+    <button id="scissors">Scissor</button>
+    <button id="paper">Paper</button>
+    <button id="rock">Rock</button>
+    <p id="playerScore">Player Score: 0</p>
+    <p id="computerScore">Computer Score: 0</p>
+    <button onclick="exitGame()" id="exit">Exit Game</button>
+
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
